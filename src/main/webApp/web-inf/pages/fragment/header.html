@@ -1,0 +1,38 @@
+<div class="head-banner">
+    <div class="one-line">
+        <div class="logo">
+
+            <div class="logo-icon star">
+                <img src="${pageContext.request.contextPath}/resources/images/icon-star.png">
+            </div>
+
+            <div class="logo-icon name">
+                <span>NPEI</span>
+            </div>
+
+<!--            <div>-->
+<!--            <sec:authorize access="isAuthenticated()">-->
+<!--                <p><sec:authentication property="principal.username" /></p>-->
+<!--            </sec:authorize>-->
+<!--            </div>-->
+            <sec:authorize access="isAuthenticated()">
+
+            </sec:authorize>
+
+
+
+            <div style="float:right" class="login-part">
+
+                <sec:authorize access="isAuthenticated()">
+                    <sec:authentication property="principal.username" />   <a class="btn btn-lg btn-danger" href="<c:url value="/logout"/>">Log off</a>
+                </sec:authorize>
+
+                <span>|</span>
+
+                    <a href="/"> Register</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<br>

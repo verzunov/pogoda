@@ -1,0 +1,102 @@
+
+header{
+    margin:5px;
+    padding:5px;
+}
+.head-banner{
+    height: 60px;
+    background-image: url("${pageContext.request.contextPath}/resources/images/logoF.jpg");
+
+}
+
+
+.logo-icon{
+    display: inline-block;
+    /*padding-bottom: 10px;*/
+}
+
+.logo-icon.star{
+    margin: 10px 10px;
+}
+
+.login-part{
+    font-family: "PT Sans","Helvetica Neue",Helvetica,Arial,sans-serif,sans-serif;
+    font-size: 1rem;
+    width: 280px;
+    height: auto;
+    margin-right:20px;
+    margin-top:30px;
+}
+
+span.signin-register{
+    display: inline;
+
+}
+.signin-register a:visited{
+    color:#508fb2;
+}
+
+
+.logo-icon.name{
+    align-content:center;
+    font-family: "Raleway";
+    color: #018c6a;
+    font-family:"sans-serif";
+    font-size:50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.content-area {
+    margin-left: 100px;
+    margin-top:100px;
+}
+
+
+/*******navbar******/
+
+#navbar ul{
+    display: none;
+    background-color: #28e0e0;
+    position: absolute;
+    top: 100%;
+}
+
+#navbar li:hover ul { display: block; }
+
+#navbar, #navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#navbar {
+    height: 30px;
+    background-color: #2fafcc;
+    padding-left: 25px;
+    min-width: 470px;
+}
+
+#navbar li {
+    float: left;
+    position: relative;
+    height: 100%;
+}
+
+#navbar li a {
+    display: block;
+    padding: 6px;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+#navbar ul li { float: none; }
+#navbar li:hover { background-color: #28e0e0; }
+#navbar ul li:hover { background-color: #2fafcc; }
+
